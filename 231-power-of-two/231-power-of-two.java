@@ -1,5 +1,9 @@
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        return Math.log10(n)/Math.log10(2) % 1==0;
+        double x=Math.log10(n)/Math.log10(2);
+        if(x-(int)x==0){
+        return true;
+        }
+        return false;
     }
 }
